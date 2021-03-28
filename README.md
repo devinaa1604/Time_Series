@@ -25,7 +25,6 @@ Used the results of the time series analysis and modeling to answer the followin
 
 Answer: Both ARMA and ARIMA have coffecients that are statistically insignificant therefore, those models cannot be used to predict the forecast of yen. GARCH has coffecients that are significant except the alpha[2] coffecient. Since the volatility is almost constant and the forecast shows it constant increases over time, the risk is expected to increase constantly and I would buy the yen now. 
 
-
 #### Linear Regression Forecasting
 
 Built a Scikit-Learn linear regression model to predict Yen futures ("settle") returns with *lagged* Yen futures returns and categorical calendar seasonal effects (e.g., day-of-week or week-of-year seasonal effects).
@@ -41,4 +40,5 @@ Steps:
 Used the results of the linear regression analysis and modeling to answer the following question:
 
 * Does this model perform better or worse on out-of-sample data compared to in-sample data?
+
 Answer: The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case.
